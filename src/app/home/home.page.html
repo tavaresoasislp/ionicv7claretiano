@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h3>Lista de afazeres</h3>
+  <ion-list class="listaTeste" [inset]="true">
+    <ion-item>
+      <ion-button id="open-toast" expand="block" shape="round"><ion-label>Lavar o carro</ion-label></ion-button>
+      <ion-toast trigger="open-toast" message="Você clicou em Lavar o carro!" [duration]="3000"></ion-toast>
+    </ion-item>
+    <ion-item>
+      <ion-button id="open-toast2" expand="block" shape="round"><ion-label>Cobrar empréstimo</ion-label></ion-button>
+      <ion-toast trigger="open-toast2" message="Você clicou em Cobrar empréstimo!" [duration]="3000"></ion-toast>
+    </ion-item>
+    <ion-item>
+      <ion-button id="open-toast3" expand="block" shape="round"><ion-label>Comprar pamonha</ion-label></ion-button>
+      <ion-toast trigger="open-toast3" message="Você clicou em Comprar pamonha!" [duration]="3000"></ion-toast>
+    </ion-item>
+    <ion-item>
+      <ion-button id="open-toast4" expand="block" shape="round"><ion-label>Preparar condimentos</ion-label></ion-button>
+      <ion-toast trigger="open-toast4" message="Você clicou em Preparar condimentos!" [duration]="3000"></ion-toast>
+    </ion-item>
+    <ion-item>
+      <ion-button id="open-toast5" expand="block" shape="round"><ion-label>Comer Hamburger</ion-label></ion-button>
+      <ion-toast trigger="open-toast5" message="Você clicou em Comer Hamburger!" [duration]="3000"></ion-toast>
+    </ion-item>
+  </ion-list>
+</ion-content>

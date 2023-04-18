@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Informe Dados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Informe Dados</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+  <ion-button id="informeDados">Informe seus dados</ion-button>
+  <ion-alert
+  trigger="informeDados"
+  header="Informe os seus dados"
+  [buttons]="enviarDados"
+  [inputs]="alertInputs"></ion-alert>
+  <p>{{nomeUsuario}}</p>
+  <p>{{emailUsuario}}</p>
+  <p>{{numeroTelUsuario}}</p>
+  <p>{{handlerMessage}}</p>
+  <p>{{roleMessage}}</p>
+</div>
+</ion-content>
